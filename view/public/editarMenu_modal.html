@@ -1,0 +1,70 @@
+<div class="modal fade" id="edit_p">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div id="_AJAX_EDIT_"></div>
+
+			<div class="modal-header">
+				<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-tittle" style="color:red;"><span class="fa fa-user-plus"></span> Editar</h3>
+				<div id="_ID_PRIVILEGIO" class="hidden"></div>
+			</div>
+			<div class="modal-body">
+				<div role="form" onkeypress="">
+          <div class="form-group">
+						<label for="email"><span class="glyphicon glyphicon-option-horizontal"></span> Opcion</label>
+						<input class="form-control" id="opcion_p" type="email" name="email" placeholder="Opcion del menu">
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+                <label for="nombre"><span class="glyphicon glyphicon-option-horizontal"></span> Icono <span class="modal-tittle" style="color:red;">*</span></label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="" id="icono"></i>
+                  </div>
+  								<input class="form-control" id="icon_p" type="text" name="nombre" placeholder="Icono">
+                </div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="apellido"><span class="glyphicon glyphicon-option-horizontal"></span> Enlace <span class="modal-tittle" style="color:red;">*</span></label>
+								<input class="form-control" id="enlace_p" type="text" name="apellido" placeholder="Link">
+							</div>
+						</div>
+					</div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="habilitar_p">
+                    Habilitar edicion de grupo
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="telefono"><span class="fa fa-circle-o"></span> Grupo <span class="modal-tittle" style="color:red;">*</span></label>
+								<select class="form-control" id="sexo_m" name="sexo" disabled>
+					        <option value="Masculino">Grupo 1</option>
+					        <option value="Femenino">Grupo 2</option>
+					      </select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success btn-block btn-lg" onclick="guardarCambiosPrivilegios()"><span class="glyphicon glyphicon-off"></span> Guardar Cambios</button>
+				<button type="button" class="btn btn-default btn-block" data-dismiss="modal" style="margin-top:10px;"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
